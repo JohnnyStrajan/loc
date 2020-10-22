@@ -9,6 +9,8 @@ function on_success(position){
 	
 	document.getElementById("altitude").innerHTML = "Altitude = " + position.coords.altitude;
 	
+	var latlon = position.coords.latitude + "," + position.coords.longitude;
+	
 	var img_url = "https://maps.googleapis.com/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyCkATcslyG_g6he4LoTZgIb44k_0Z2OhDQ";
 	
 	document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
