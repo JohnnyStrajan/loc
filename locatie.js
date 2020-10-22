@@ -5,7 +5,7 @@ function on_success(position){
 	
 	document.getElementById("longitude").innerHTML = "Longitude = " + position.coords.longitude;
 	
-	document.getElementById("acc").innerHTML = "Accuracy = " + position.coords.acc;
+	document.getElementById("acc").innerHTML = "Accuracy = " + position.coords.accuracy;
 	
 	document.getElementById("altitude").innerHTML = "Altitude = " + position.coords.altitude;
 	
